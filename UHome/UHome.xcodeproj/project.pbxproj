@@ -13,6 +13,12 @@
 		1B69BF731C77E19800AE9EE7 /* UHome.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B69BF711C77E19800AE9EE7 /* UHome.xcdatamodeld */; };
 		1B69BF751C77E19800AE9EE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B69BF741C77E19800AE9EE7 /* Assets.xcassets */; };
 		1B69BF781C77E19800AE9EE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B69BF761C77E19800AE9EE7 /* LaunchScreen.storyboard */; };
+		1B69BF861C78BF0D00AE9EE7 /* CommonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B69BF851C78BF0D00AE9EE7 /* CommonData.swift */; };
+		1B69BF881C78BF7900AE9EE7 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B69BF871C78BF7900AE9EE7 /* MainTabBarController.swift */; };
+		1B69BF8A1C78BFD900AE9EE7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B69BF891C78BFD900AE9EE7 /* HomeViewController.swift */; };
+		1B69BF8C1C78BFE800AE9EE7 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B69BF8B1C78BFE800AE9EE7 /* MessageViewController.swift */; };
+		1B69BF8E1C78BFFA00AE9EE7 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B69BF8D1C78BFFA00AE9EE7 /* MyViewController.swift */; };
+		1B69BF901C78C00600AE9EE7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B69BF8F1C78C00600AE9EE7 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		1B69BF741C77E19800AE9EE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B69BF771C77E19800AE9EE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B69BF791C77E19900AE9EE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B69BF851C78BF0D00AE9EE7 /* CommonData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonData.swift; sourceTree = "<group>"; };
+		1B69BF871C78BF7900AE9EE7 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		1B69BF891C78BFD900AE9EE7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1B69BF8B1C78BFE800AE9EE7 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		1B69BF8D1C78BFFA00AE9EE7 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		1B69BF8F1C78C00600AE9EE7 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,12 @@
 			isa = PBXGroup;
 			children = (
 				1B69BF6A1C77E19800AE9EE7 /* AppDelegate.swift */,
+				1B69BF7F1C78BE4300AE9EE7 /* Common */,
+				1B69BF801C78BE4300AE9EE7 /* Extension */,
+				1B69BF811C78BE4300AE9EE7 /* Home */,
+				1B69BF821C78BE4300AE9EE7 /* Message */,
+				1B69BF831C78BE4300AE9EE7 /* My */,
+				1B69BF841C78BE4300AE9EE7 /* Search */,
 				1B69BF6C1C77E19800AE9EE7 /* ViewController.swift */,
 				1B69BF6E1C77E19800AE9EE7 /* Main.storyboard */,
 				1B69BF741C77E19800AE9EE7 /* Assets.xcassets */,
@@ -65,6 +83,54 @@
 				1B69BF711C77E19800AE9EE7 /* UHome.xcdatamodeld */,
 			);
 			path = UHome;
+			sourceTree = "<group>";
+		};
+		1B69BF7F1C78BE4300AE9EE7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1B69BF851C78BF0D00AE9EE7 /* CommonData.swift */,
+				1B69BF871C78BF7900AE9EE7 /* MainTabBarController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1B69BF801C78BE4300AE9EE7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1B69BF811C78BE4300AE9EE7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1B69BF891C78BFD900AE9EE7 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1B69BF821C78BE4300AE9EE7 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				1B69BF8B1C78BFE800AE9EE7 /* MessageViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		1B69BF831C78BE4300AE9EE7 /* My */ = {
+			isa = PBXGroup;
+			children = (
+				1B69BF8D1C78BFFA00AE9EE7 /* MyViewController.swift */,
+			);
+			path = My;
+			sourceTree = "<group>";
+		};
+		1B69BF841C78BE4300AE9EE7 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				1B69BF8F1C78C00600AE9EE7 /* SearchViewController.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +207,13 @@
 			files = (
 				1B69BF6D1C77E19800AE9EE7 /* ViewController.swift in Sources */,
 				1B69BF6B1C77E19800AE9EE7 /* AppDelegate.swift in Sources */,
+				1B69BF881C78BF7900AE9EE7 /* MainTabBarController.swift in Sources */,
+				1B69BF901C78C00600AE9EE7 /* SearchViewController.swift in Sources */,
+				1B69BF861C78BF0D00AE9EE7 /* CommonData.swift in Sources */,
 				1B69BF731C77E19800AE9EE7 /* UHome.xcdatamodeld in Sources */,
+				1B69BF8A1C78BFD900AE9EE7 /* HomeViewController.swift in Sources */,
+				1B69BF8E1C78BFFA00AE9EE7 /* MyViewController.swift in Sources */,
+				1B69BF8C1C78BFE800AE9EE7 /* MessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +363,7 @@
 				1B69BF7E1C77E19900AE9EE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
