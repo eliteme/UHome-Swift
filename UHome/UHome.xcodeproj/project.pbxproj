@@ -20,6 +20,8 @@
 		1B69BF8E1C78BFFA00AE9EE7 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B69BF8D1C78BFFA00AE9EE7 /* MyViewController.swift */; };
 		1B69BF901C78C00600AE9EE7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B69BF8F1C78C00600AE9EE7 /* SearchViewController.swift */; };
 		8D75A04B676242001F52E99F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B9E6640A5A3A9A3FECD50B /* Pods.framework */; };
+		9BBE9B081C7A02F6008B50A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBE9B071C7A02F6008B50A6 /* LoginViewController.swift */; };
+		9BBE9B0B1C7A0841008B50A6 /* KtColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBE9B0A1C7A0841008B50A6 /* KtColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		1B69BF8D1C78BFFA00AE9EE7 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		1B69BF8F1C78C00600AE9EE7 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		751F9117AF3A2B25B6859830 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9BBE9B071C7A02F6008B50A6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9BBE9B0A1C7A0841008B50A6 /* KtColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KtColor.swift; sourceTree = "<group>"; };
 		A7B9E6640A5A3A9A3FECD50B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8B9740C67EA713DCA6A616 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,7 +81,7 @@
 			children = (
 				1B69BF6A1C77E19800AE9EE7 /* AppDelegate.swift */,
 				1B69BF7F1C78BE4300AE9EE7 /* Common */,
-				1B69BF801C78BE4300AE9EE7 /* Extension */,
+				9BBE9B091C7A0841008B50A6 /* Extension */,
 				1B69BF811C78BE4300AE9EE7 /* Home */,
 				1B69BF821C78BE4300AE9EE7 /* Message */,
 				1B69BF831C78BE4300AE9EE7 /* My */,
@@ -97,15 +101,9 @@
 			children = (
 				1B69BF851C78BF0D00AE9EE7 /* CommonData.swift */,
 				1B69BF871C78BF7900AE9EE7 /* MainTabBarController.swift */,
+				9BBE9B071C7A02F6008B50A6 /* LoginViewController.swift */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		1B69BF801C78BE4300AE9EE7 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		1B69BF811C78BE4300AE9EE7 /* Home */ = {
@@ -146,6 +144,14 @@
 				A7B9E6640A5A3A9A3FECD50B /* Pods.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BBE9B091C7A0841008B50A6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9BBE9B0A1C7A0841008B50A6 /* KtColor.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		C2E4E6EEEC8F3910BF47C5A6 /* Pods */ = {
@@ -286,8 +292,10 @@
 				1B69BF901C78C00600AE9EE7 /* SearchViewController.swift in Sources */,
 				1B69BF861C78BF0D00AE9EE7 /* CommonData.swift in Sources */,
 				1B69BF731C77E19800AE9EE7 /* UHome.xcdatamodeld in Sources */,
+				9BBE9B0B1C7A0841008B50A6 /* KtColor.swift in Sources */,
 				1B69BF8A1C78BFD900AE9EE7 /* HomeViewController.swift in Sources */,
 				1B69BF8E1C78BFFA00AE9EE7 /* MyViewController.swift in Sources */,
+				9BBE9B081C7A02F6008B50A6 /* LoginViewController.swift in Sources */,
 				1B69BF8C1C78BFE800AE9EE7 /* MessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
