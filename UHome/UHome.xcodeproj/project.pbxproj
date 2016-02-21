@@ -19,6 +19,10 @@
 		1B69BF8C1C78BFE800AE9EE7 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B69BF8B1C78BFE800AE9EE7 /* MessageViewController.swift */; };
 		1B69BF8E1C78BFFA00AE9EE7 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B69BF8D1C78BFFA00AE9EE7 /* MyViewController.swift */; };
 		1B69BF901C78C00600AE9EE7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B69BF8F1C78C00600AE9EE7 /* SearchViewController.swift */; };
+		1BCE88171C7A064000E57831 /* MessageDataSourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCE88161C7A064000E57831 /* MessageDataSourse.swift */; };
+		1BCE881A1C7A06BA00E57831 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCE88181C7A06BA00E57831 /* MessageCell.swift */; };
+		1BCE881B1C7A06BA00E57831 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BCE88191C7A06BA00E57831 /* MessageCell.xib */; };
+		1BCE881D1C7A0D9600E57831 /* ChatTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCE881C1C7A0D9600E57831 /* ChatTableController.swift */; };
 		8D75A04B676242001F52E99F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B9E6640A5A3A9A3FECD50B /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,9 +38,13 @@
 		1B69BF851C78BF0D00AE9EE7 /* CommonData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonData.swift; sourceTree = "<group>"; };
 		1B69BF871C78BF7900AE9EE7 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		1B69BF891C78BFD900AE9EE7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		1B69BF8B1C78BFE800AE9EE7 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		1B69BF8B1C78BFE800AE9EE7 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageViewController.swift; path = ../MessageViewController.swift; sourceTree = "<group>"; };
 		1B69BF8D1C78BFFA00AE9EE7 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		1B69BF8F1C78C00600AE9EE7 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		1BCE88161C7A064000E57831 /* MessageDataSourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDataSourse.swift; sourceTree = "<group>"; };
+		1BCE88181C7A06BA00E57831 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		1BCE88191C7A06BA00E57831 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		1BCE881C1C7A0D9600E57831 /* ChatTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableController.swift; sourceTree = "<group>"; };
 		751F9117AF3A2B25B6859830 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A7B9E6640A5A3A9A3FECD50B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8B9740C67EA713DCA6A616 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,7 +127,9 @@
 		1B69BF821C78BE4300AE9EE7 /* Message */ = {
 			isa = PBXGroup;
 			children = (
-				1B69BF8B1C78BFE800AE9EE7 /* MessageViewController.swift */,
+				1BCE88131C7A05B300E57831 /* Controller */,
+				1BCE88141C7A05B300E57831 /* Model */,
+				1BCE88151C7A05B300E57831 /* View */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -138,6 +148,32 @@
 				1B69BF8F1C78C00600AE9EE7 /* SearchViewController.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		1BCE88131C7A05B300E57831 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1B69BF8B1C78BFE800AE9EE7 /* MessageViewController.swift */,
+				1BCE881C1C7A0D9600E57831 /* ChatTableController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1BCE88141C7A05B300E57831 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1BCE88161C7A064000E57831 /* MessageDataSourse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1BCE88151C7A05B300E57831 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1BCE88181C7A06BA00E57831 /* MessageCell.swift */,
+				1BCE88191C7A06BA00E57831 /* MessageCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		1C9B53C1F8EE83ED76BFE073 /* Frameworks */ = {
@@ -220,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B69BF781C77E19800AE9EE7 /* LaunchScreen.storyboard in Resources */,
+				1BCE881B1C7A06BA00E57831 /* MessageCell.xib in Resources */,
 				1B69BF751C77E19800AE9EE7 /* Assets.xcassets in Resources */,
 				1B69BF701C77E19800AE9EE7 /* Main.storyboard in Resources */,
 			);
@@ -280,8 +317,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BCE881D1C7A0D9600E57831 /* ChatTableController.swift in Sources */,
+				1BCE881A1C7A06BA00E57831 /* MessageCell.swift in Sources */,
 				1B69BF6D1C77E19800AE9EE7 /* ViewController.swift in Sources */,
 				1B69BF6B1C77E19800AE9EE7 /* AppDelegate.swift in Sources */,
+				1BCE88171C7A064000E57831 /* MessageDataSourse.swift in Sources */,
 				1B69BF881C78BF7900AE9EE7 /* MainTabBarController.swift in Sources */,
 				1B69BF901C78C00600AE9EE7 /* SearchViewController.swift in Sources */,
 				1B69BF861C78BF0D00AE9EE7 /* CommonData.swift in Sources */,
