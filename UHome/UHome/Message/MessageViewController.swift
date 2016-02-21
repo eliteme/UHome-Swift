@@ -7,29 +7,33 @@
 //
 
 import UIKit
+import SnapKit
 
-class MessageViewController: UIViewController {
+class MessageViewController: UIViewController, UITableViewDelegate {
 
+    let globalNavigationBarHeight = 64   //为了防止冲突，我先写在这里了
+    var tableView = UITableView()
+    var dataSourse = MessageDataSourse()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        automaticallyAdjustsScrollViewInsets = false
+        
+        setUpTableView()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func setUpTableView() {
+        
+        view.addSubview(tableView)
+        tableView.snp_makeConstraints { (make) -> Void in
+            make.top.equalTo(globalNavigationBarHeight)
+            make.left.right.bottom.equalTo(0)
+        }
+        tableView.delegate = self
+        tableView.dataSource = dataSourse
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 100
+        tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+        tableView.tableFooterView = UIView()
     }
-    */
-
 }
