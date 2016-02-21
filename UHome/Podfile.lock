@@ -1,0 +1,19 @@
+PODS:
+  - Kingfisher (1.8.2)
+  - MJExtension (3.0.7)
+  - MJRefresh (3.0.6)
+  - SnapKit (0.17.0)
+
+DEPENDENCIES:
+  - Kingfisher (~> 1.8)
+  - MJExtension
+  - MJRefresh
+  - SnapKit (~> 0.17.0)
+
+SPEC CHECKSUMS:
+  Kingfisher: b39315e9dbed7e8ffe73a9ca1be2ee006d1d57e4
+  MJExtension: 290cc966f0f849b12b6391a38e296e0004ae8e5e
+  MJRefresh: df419e2393f9020bcd340c552e8f0cf700073f32
+  SnapKit: 49fd7b1b3ff58ab4064004036b8afcfddbd3a4bd
+
+COCOAPODS: 0.39.0

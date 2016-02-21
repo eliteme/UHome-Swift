@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5150C7B21711DEE40C3C94680FAAC45080B1B13D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C71A612E55CCF042C9D0404A97F793518FAC0059" : 0,
+    "5150C7B21711DEE40C3C94680FAAC45080B1B13D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2A38625D-F886-4173-B965-B7D8C14EEF33",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C71A612E55CCF042C9D0404A97F793518FAC0059" : "",
+    "5150C7B21711DEE40C3C94680FAAC45080B1B13D" : "UHome\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "UHome",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "UHome\/UHome.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Wl201314\/UHome-Swift",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5150C7B21711DEE40C3C94680FAAC45080B1B13D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/649395594\/panDoctor-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C71A612E55CCF042C9D0404A97F793518FAC0059"
+    }
+  ]
+}
