@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import MBProgressHUD
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     let loginButton = UIButton()
@@ -98,6 +99,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     func loginButtonClicked(sender: AnyObject) {
+        // Autolayout 下的动画
 //        self.topConstraint?.updateOffset(50)
 //        UIView.animateWithDuration(0.5, animations: { () -> Void in
 //            self.view.layoutIfNeeded()
@@ -106,6 +108,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 //        }
         let mainDic = NSDictionary.init(contentsOfFile: NSBundle.mainBundle().pathForResource("Database", ofType: "plist")!)
         let usersDic = mainDic!["Users"]
+        let hud = MBProgressHUD.showHUDAddedTo(view, animated: true)
+        hud.labelText = "登录中"
+        hud.hide(true, afterDelay: 1)
         for var user in usersDic as! NSArray {
             user = user as! NSDictionary
             if user.objectForKey("username") as? String == usernameField.text {
@@ -117,7 +122,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 }
             }
         }
-        self.navigationController?.pushViewController(MainTabBarController(), animated: false)
+        delay(1) {
+            self.navigationController?.pushViewController(MainTabBarController(), animated: false)
+        }
     }
     
     func closeTextFiled(sender: AnyObject) {
