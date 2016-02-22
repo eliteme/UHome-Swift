@@ -117,7 +117,16 @@ class LoginViewController: UIViewController {
             if user.objectForKey("username") as? String == usernameField.text {
                 isUserExist = true
                 hud.labelText = "登录中"
-                GlobalInfoManager.isRenter = user.objectForKey("identify") as! String == "renter"
+                GlobalInfoManager.currentUser =
+                User(name: user.objectForKey("username") as! String,
+                     isRenter: user.objectForKey("identify") as! String == "renter",
+                     sex: user.objectForKey("sex") as! String,
+                     nickname: user.objectForKey("nickname") as! String,
+                     age: user.objectForKey("age") as! Int,
+                     education: user.objectForKey("education") as! String,
+                     work:  user.objectForKey("work") as! String,
+                     location: user.objectForKey("location") as! String,
+                     points: user.objectForKey("points") as! Int)
                 if user.objectForKey("password") as? String != passwordField.text {
                     cancel(task)
                     hud.mode = MBProgressHUDMode.Text

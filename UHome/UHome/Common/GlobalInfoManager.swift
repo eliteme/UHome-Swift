@@ -9,5 +9,13 @@
 import Foundation
 
 class GlobalInfoManager {
-    static var isRenter: Bool = false
+    static var currentUser: User = User(name: "",
+                                        isRenter: false,
+                                        sex: "",
+                                        nickname: "",
+                                        age: 0,
+                                        education: "",
+                                        work:  "",
+                                        location: "",
+                                        points: 0)
 }

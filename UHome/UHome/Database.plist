@@ -5,6 +5,20 @@
 	<key>Users</key>
 	<array>
 		<dict>
+			<key>points</key>
+			<integer>100</integer>
+			<key>location</key>
+			<string>沈阳</string>
+			<key>work</key>
+			<string>iOS Developer</string>
+			<key>education</key>
+			<string>本科</string>
+			<key>age</key>
+			<integer>21</integer>
+			<key>nickname</key>
+			<string>软件开发者张星宇</string>
+			<key>sex</key>
+			<string>male</string>
 			<key>identify</key>
 			<string>renter</string>
 			<key>password</key>
@@ -13,6 +27,20 @@
 			<string>zxy</string>
 		</dict>
 		<dict>
+			<key>points</key>
+			<integer>20</integer>
+			<key>location</key>
+			<string>沈阳</string>
+			<key>work</key>
+			<string>iOS Developer</string>
+			<key>education</key>
+			<string>本科</string>
+			<key>age</key>
+			<integer>21</integer>
+			<key>nickname</key>
+			<string>软件开发者王佳乐</string>
+			<key>sex</key>
+			<string>male</string>
 			<key>username</key>
 			<string>wjl</string>
 			<key>password</key>
