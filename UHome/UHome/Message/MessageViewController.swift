@@ -23,7 +23,6 @@ class MessageViewController: UIViewController, UITableViewDelegate {
     }
     
     func setUpTableView() {
-        
         view.addSubview(tableView)
         tableView.snp_makeConstraints { (make) -> Void in
             make.top.equalTo(globalNavigationBarHeight)
@@ -35,5 +34,23 @@ class MessageViewController: UIViewController, UITableViewDelegate {
         tableView.estimatedRowHeight = 100
         tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         tableView.tableFooterView = UIView()
+    }
+}
+extension UINavigationController {
+    /**
+     调用系统的pushViewController方法，同时隐藏底部Tabbar
+     
+     :param: viewController 即将跳转的viewController
+     :param: animated       是否开启动画
+     */
+    func pushViewControllerWithTabbarHidden(viewController: UIViewController, animated: Bool) {
+        viewController.hidesBottomBarWhenPushed = true
+        pushViewController(viewController, animated: true)
+    }
+}
+extension MessageViewController{
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        navigationController?.pushViewControllerWithTabbarHidden(ChatTableController(), animated: true)
     }
 }
