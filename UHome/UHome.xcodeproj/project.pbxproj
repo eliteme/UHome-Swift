@@ -31,6 +31,9 @@
 		8D75A04B676242001F52E99F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B9E6640A5A3A9A3FECD50B /* Pods.framework */; };
 		9BBE9B081C7A02F6008B50A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBE9B071C7A02F6008B50A6 /* LoginViewController.swift */; };
 		9BBE9B0B1C7A0841008B50A6 /* KtColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBE9B0A1C7A0841008B50A6 /* KtColor.swift */; };
+		9BFD02081C7AF833003D7D13 /* Database.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BFD02071C7AF833003D7D13 /* Database.plist */; };
+		9BFD020E1C7B05D6003D7D13 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFD020D1C7B05D6003D7D13 /* Delay.swift */; };
+		9BFD02101C7B369E003D7D13 /* GlobalInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFD020F1C7B369E003D7D13 /* GlobalInfoManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +63,10 @@
 		751F9117AF3A2B25B6859830 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9BBE9B071C7A02F6008B50A6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9BBE9B0A1C7A0841008B50A6 /* KtColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KtColor.swift; sourceTree = "<group>"; };
+		9BFD02071C7AF833003D7D13 /* Database.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Database.plist; sourceTree = "<group>"; };
+		9BFD02091C7B02E9003D7D13 /* UHome-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UHome-Bridging-Header.h"; sourceTree = "<group>"; };
+		9BFD020D1C7B05D6003D7D13 /* Delay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
+		9BFD020F1C7B369E003D7D13 /* GlobalInfoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalInfoManager.swift; sourceTree = "<group>"; };
 		A7B9E6640A5A3A9A3FECD50B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8B9740C67EA713DCA6A616 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +117,7 @@
 				1B69BF761C77E19800AE9EE7 /* LaunchScreen.storyboard */,
 				1B69BF791C77E19900AE9EE7 /* Info.plist */,
 				1B69BF711C77E19800AE9EE7 /* UHome.xcdatamodeld */,
+				9BFD02071C7AF833003D7D13 /* Database.plist */,
 			);
 			path = UHome;
 			sourceTree = "<group>";
@@ -120,6 +128,8 @@
 				1B69BF851C78BF0D00AE9EE7 /* CommonData.swift */,
 				1B69BF871C78BF7900AE9EE7 /* MainTabBarController.swift */,
 				9BBE9B071C7A02F6008B50A6 /* LoginViewController.swift */,
+				9BFD02091C7B02E9003D7D13 /* UHome-Bridging-Header.h */,
+				9BFD020F1C7B369E003D7D13 /* GlobalInfoManager.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -201,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				9BBE9B0A1C7A0841008B50A6 /* KtColor.swift */,
+				9BFD020D1C7B05D6003D7D13 /* Delay.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -279,6 +290,7 @@
 				1B69BF781C77E19800AE9EE7 /* LaunchScreen.storyboard in Resources */,
 				1BCE881B1C7A06BA00E57831 /* MessageCell.xib in Resources */,
 				1B69BF751C77E19800AE9EE7 /* Assets.xcassets in Resources */,
+				9BFD02081C7AF833003D7D13 /* Database.plist in Resources */,
 				1B69BF701C77E19800AE9EE7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +361,8 @@
 				1B69BF901C78C00600AE9EE7 /* SearchViewController.swift in Sources */,
 				1B69BF861C78BF0D00AE9EE7 /* CommonData.swift in Sources */,
 				1B69BF731C77E19800AE9EE7 /* UHome.xcdatamodeld in Sources */,
+				9BFD020E1C7B05D6003D7D13 /* Delay.swift in Sources */,
+				9BFD02101C7B369E003D7D13 /* GlobalInfoManager.swift in Sources */,
 				9BBE9B0B1C7A0841008B50A6 /* KtColor.swift in Sources */,
 				1B137B4D1C7B4C130027288A /* ChatTableDataSourse.swift in Sources */,
 				1B69BF8A1C78BFD900AE9EE7 /* HomeViewController.swift in Sources */,
@@ -468,11 +482,14 @@
 			baseConfigurationReference = 751F9117AF3A2B25B6859830 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = UHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Martinwjl.UHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UHome/Common/UHome-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -481,11 +498,13 @@
 			baseConfigurationReference = CD8B9740C67EA713DCA6A616 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = UHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Martinwjl.UHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UHome/Common/UHome-Bridging-Header.h";
 			};
 			name = Release;
 		};
