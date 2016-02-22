@@ -19,9 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //创建窗口
         window = UIWindow(frame: MainBounds)
         //创建根视图控制器
-//        let mainTabBarVC = MainTabBarController()
-//        self.window?.rootViewController = mainTabBarVC
-        self.window?.rootViewController = UINavigationController(rootViewController: LoginViewController())
+        let mainTabBarVC = MainTabBarController()
+        self.window?.rootViewController = mainTabBarVC
+//        self.window?.rootViewController = UINavigationController(rootViewController: LoginViewController())
         //显示窗口
         window?.makeKeyAndVisible()
 

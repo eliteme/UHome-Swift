@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import MBProgressHUD
 
-class LoginViewController: UIViewController, UITextFieldDelegate {
+class LoginViewController: UIViewController {
     let loginButton = UIButton()
     let logoImageView = UIImageView(image: UIImage(named: "clear_logo"))
     var usernameField = UITextField()
@@ -68,7 +68,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             make.top.equalTo(logoImageView.snp_bottom).offset(50)
         }
         usernameField.placeholder = "请输入您的用户名"
-        usernameField.delegate = self
         
         /**
         *  password
@@ -81,7 +80,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             make.top.equalTo(usernameField.snp_bottom)
         }
         passwordField.placeholder = "请输入您的密码"
-        passwordField.delegate = self
         
         /**
         *  Button
@@ -108,23 +106,31 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 //        }
         let mainDic = NSDictionary.init(contentsOfFile: NSBundle.mainBundle().pathForResource("Database", ofType: "plist")!)
         let usersDic = mainDic!["Users"]
+        let task = delay(1) {
+            self.navigationController?.pushViewController(MainTabBarController(), animated: false)
+        }
         let hud = MBProgressHUD.showHUDAddedTo(view, animated: true)
-        hud.labelText = "登录中"
-        hud.hide(true, afterDelay: 1)
+        var isUserExist = false
+        
         for var user in usersDic as! NSArray {
             user = user as! NSDictionary
             if user.objectForKey("username") as? String == usernameField.text {
-                if user.objectForKey("password") as? String == passwordField.text {
-                    print("密码正确")
-                }
-                else {
-                    print("密码错误")
+                isUserExist = true
+                hud.labelText = "登录中"
+                GlobalInfoManager.isRenter = user.objectForKey("identify") as! String == "renter"
+                if user.objectForKey("password") as? String != passwordField.text {
+                    cancel(task)
+                    hud.mode = MBProgressHUDMode.Text
+                    hud.labelText = "密码错误"
                 }
             }
         }
-        delay(1) {
-            self.navigationController?.pushViewController(MainTabBarController(), animated: false)
+        if !isUserExist {
+            cancel(task)
+            hud.mode = MBProgressHUDMode.Text
+            hud.labelText = "用户不存在"
         }
+        hud.hide(true, afterDelay: 1)
     }
     
     func closeTextFiled(sender: AnyObject) {
