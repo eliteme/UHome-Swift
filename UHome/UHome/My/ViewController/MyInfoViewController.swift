@@ -10,7 +10,7 @@ import UIKit
 
 class MyInfoViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     let tableView = UITableView()
-    var titles = ["我的积分：", "我的评论：", "认证信息：", "我的房源："]
+    var titles = ["昵称：", "性别：", "年龄：", "学历：", "所在地：", "职业："]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,23 +37,32 @@ class MyInfoViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
 extension MyInfoViewController {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return section == 0 ? 1 : titles.count
+        return titles.count
     }
     
-    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 30 * CGFloat(section)
-    }
-    
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 2
-    }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier(String(MyInfoTableViewCell)) as? MyInfoTableViewCell
+        var cell = tableView.dequeueReusableCellWithIdentifier(String(MyInfoViewController))
         if cell == nil{
-            cell = MyInfoTableViewCell(style: .Default, reuseIdentifier: String(MyInfoTableViewCell), indexPath: indexPath)
+            cell = UITableViewCell(style: .Default, reuseIdentifier: String(MyInfoViewController))
         }
-        cell?.configureForCell(titles)
+        cell?.textLabel?.text = titles[indexPath.row]
+
+        let rightLabel = UILabel()
+        cell?.contentView.addSubview(rightLabel)
+        rightLabel.snp_makeConstraints { (make) -> Void in
+            make.centerY.equalTo((cell?.contentView.snp_centerY)!)
+            make.right.equalTo((cell?.contentView)!).offset(-20)
+        }
+        switch indexPath.row {
+        case 0: rightLabel.text = GlobalInfoManager.currentUser.nickname
+        case 1: rightLabel.text = GlobalInfoManager.currentUser.sex == "male" ? "男" : "女"
+        case 2: rightLabel.text = String(GlobalInfoManager.currentUser.age) + " 岁"
+        case 3: rightLabel.text = GlobalInfoManager.currentUser.education
+        case 4: rightLabel.text = GlobalInfoManager.currentUser.location
+        case 5: rightLabel.text = GlobalInfoManager.currentUser.work
+        default: break
+        }
         return cell!
     }
     
