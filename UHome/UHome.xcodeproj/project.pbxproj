@@ -36,6 +36,8 @@
 		9BFD02131C7B4545003D7D13 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFD02121C7B4545003D7D13 /* MyViewController.swift */; };
 		9BFD02171C7B4608003D7D13 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFD02161C7B4608003D7D13 /* DataModel.swift */; };
 		9BFD02191C7B4976003D7D13 /* MyInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFD02181C7B4976003D7D13 /* MyInfoTableViewCell.swift */; };
+		9BFD021B1C7C3F66003D7D13 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFD021A1C7C3F66003D7D13 /* CommentViewController.swift */; };
+		9BFD021D1C7C44C7003D7D13 /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFD021C1C7C44C7003D7D13 /* MyInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +73,8 @@
 		9BFD02121C7B4545003D7D13 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		9BFD02161C7B4608003D7D13 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		9BFD02181C7B4976003D7D13 /* MyInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInfoTableViewCell.swift; sourceTree = "<group>"; };
+		9BFD021A1C7C3F66003D7D13 /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		9BFD021C1C7C44C7003D7D13 /* MyInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
 		A7B9E6640A5A3A9A3FECD50B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8B9740C67EA713DCA6A616 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -227,6 +231,8 @@
 			isa = PBXGroup;
 			children = (
 				9BFD02121C7B4545003D7D13 /* MyViewController.swift */,
+				9BFD021A1C7C3F66003D7D13 /* CommentViewController.swift */,
+				9BFD021C1C7C44C7003D7D13 /* MyInfoViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -387,7 +393,9 @@
 				1B69BF6B1C77E19800AE9EE7 /* AppDelegate.swift in Sources */,
 				1B137B481C7B4BCA0027288A /* ChatMessageLeftCell.swift in Sources */,
 				1B137B491C7B4BCA0027288A /* ChatMessageRightCell.swift in Sources */,
+				9BFD021D1C7C44C7003D7D13 /* MyInfoViewController.swift in Sources */,
 				1BCE88171C7A064000E57831 /* MessageDataSourse.swift in Sources */,
+				9BFD021B1C7C3F66003D7D13 /* CommentViewController.swift in Sources */,
 				1B69BF881C78BF7900AE9EE7 /* MainTabBarController.swift in Sources */,
 				9BFD02131C7B4545003D7D13 /* MyViewController.swift in Sources */,
 				1B69BF901C78C00600AE9EE7 /* SearchViewController.swift in Sources */,
@@ -400,7 +408,6 @@
 				1B69BF8A1C78BFD900AE9EE7 /* HomeViewController.swift in Sources */,
 				9BFD02171C7B4608003D7D13 /* DataModel.swift in Sources */,
 				1B137B451C7B43BF0027288A /* UIInputView.swift in Sources */,
-				1B69BF8E1C78BFFA00AE9EE7 /* MyViewController.swift in Sources */,
 				9BBE9B081C7A02F6008B50A6 /* LoginViewController.swift in Sources */,
 				1B69BF8C1C78BFE800AE9EE7 /* MessageViewController.swift in Sources */,
 				1B137B4C1C7B4C130027288A /* ChatModel.swift in Sources */,

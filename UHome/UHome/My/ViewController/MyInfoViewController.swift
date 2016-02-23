@@ -1,24 +1,20 @@
 //
-//  MyViewController.swift
+//  MyInfoViewController.swift
 //  UHome
 //
-//  Created by wjl on 16/2/20.
+//  Created by 张星宇 on 16/2/23.
 //  Copyright © 2016年 Martin. All rights reserved.
 //
 
 import UIKit
 
-class MyViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+class MyInfoViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     let tableView = UITableView()
     var titles = ["我的积分：", "我的评论：", "认证信息：", "我的房源："]
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if GlobalInfoManager.currentUser.isRenter {
-//            titles.removeLast()   // 开发环境再加上这句话，目前调试的时候先注释掉
-        }
+        self.title = "个人信息"
         
         view.addSubview(tableView)
         tableView.snp_makeConstraints { (make) -> Void in
@@ -29,6 +25,8 @@ class MyViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
         tableView.estimatedRowHeight = 50
+        
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,7 +35,7 @@ class MyViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
     }
 }
 
-extension MyViewController {
+extension MyInfoViewController {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return section == 0 ? 1 : titles.count
     }
@@ -49,7 +47,7 @@ extension MyViewController {
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 2
     }
-
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier(String(MyInfoTableViewCell)) as? MyInfoTableViewCell
         if cell == nil{
@@ -60,14 +58,14 @@ extension MyViewController {
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if indexPath.section == 0 {
-            self.navigationController?.pushViewController(MyInfoViewController(), animated: true)
-        }
-        else {
-            switch indexPath.row {
-            case 1: self.navigationController?.pushViewController(CommentViewController(), animated: true)
-            default: break
-            }
-        }
+//        if indexPath.section == 0 {
+//            self.navigationController?.pushViewController(MyInfoViewController(), animated: true)
+//        }
+//        else {
+//            switch indexPath.row {
+//            case 1: self.navigationController?.pushViewController(CommentViewController(), animated: true)
+//            default: break
+//            }
+//        }
     }
 }

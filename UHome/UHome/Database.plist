@@ -6,6 +6,28 @@
 	<array>
 		<dict>
 			<key>points</key>
+			<integer>50</integer>
+			<key>location</key>
+			<string>地点</string>
+			<key>work</key>
+			<string>工作</string>
+			<key>education</key>
+			<string>本科</string>
+			<key>age</key>
+			<integer>20</integer>
+			<key>nickname</key>
+			<string>这里是昵称</string>
+			<key>identify</key>
+			<string>renter</string>
+			<key>sex</key>
+			<string>male</string>
+			<key>password</key>
+			<string></string>
+			<key>username</key>
+			<string>111</string>
+		</dict>
+		<dict>
+			<key>points</key>
 			<integer>100</integer>
 			<key>location</key>
 			<string>沈阳</string>
