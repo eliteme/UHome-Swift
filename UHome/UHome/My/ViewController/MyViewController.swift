@@ -66,6 +66,7 @@ extension MyViewController {
         else {
             switch indexPath.row {
             case 1: self.navigationController?.pushViewController(CommentViewController(), animated: true)
+            case 2: self.navigationController?.pushViewController(ConfirmViewController(), animated: true)
             default: break
             }
         }
