@@ -7,6 +7,8 @@
 //
 
 import UIKit
+public let ScreenWidth = UIScreen.mainScreen().bounds.size.width
+public let ScreenHeight = UIScreen.mainScreen().bounds.size.height
 public let MainBounds = UIScreen.mainScreen().bounds
-
-
+public let globalTabbarHeight = 49
+public let globalNavigationBarHeight = 64

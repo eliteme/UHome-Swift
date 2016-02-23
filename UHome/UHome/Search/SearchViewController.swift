@@ -7,29 +7,44 @@
 //
 
 import UIKit
+import SnapKit
 
-class SearchViewController: UIViewController {
+class SearchViewController: UIViewController, UITableViewDelegate{
 
+    var cityTableVC = CityTableViewController()
+    var searchBar: UISearchBar?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        setUpTableView()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func setUpSearchBar(){
+        
+        searchBar?.placeholder = "输入城市名称"
+        searchBar?.searchBarStyle = UISearchBarStyle.Default
+        searchBar?.backgroundColor = UIColor.blueColor()
+        searchBar?.showsCancelButton = true
+        view.addSubview(searchBar!);
+        searchBar?.snp_makeConstraints(closure: { (make) -> Void in
+            make.top.equalTo(0)
+            make.left.equalTo(5)
+            make.right.equalTo(-5)
+            make.height.equalTo(60)
+        })
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func setUpTableView(){
+        view.addSubview(cityTableVC.view)
+        cityTableVC.view.snp_makeConstraints { (make) -> Void in
+            make.top.equalTo(globalNavigationBarHeight)
+            make.left.equalTo(0)
+            make.width.equalTo(ScreenWidth)
+            make.bottom.equalTo(view).offset(-globalTabbarHeight)
+        }
+        
     }
-    */
-
 }

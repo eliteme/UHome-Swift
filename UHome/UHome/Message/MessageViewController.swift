@@ -11,7 +11,6 @@ import SnapKit
 
 class MessageViewController: UIViewController, UITableViewDelegate {
 
-    let globalNavigationBarHeight = 64   //为了防止冲突，我先写在这里了
     var tableView = UITableView()
     var dataSourse = MessageDataSourse()
     
