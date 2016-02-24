@@ -68,7 +68,16 @@ class MyInfoTableViewCell: UITableViewCell {
             usernameLabel.font = UIFont.systemFontOfSize(20)
         }
         else {
-            
+            if indexPath.row == 0 {
+                self.accessoryType = .None
+                let rightLabel = UILabel()
+                contentView.addSubview(rightLabel)
+                rightLabel.snp_makeConstraints { (make) -> Void in
+                    make.centerY.equalTo(contentView.snp_centerY)
+                    make.right.equalTo(contentView).offset(-20)
+                }
+                rightLabel.text = String(GlobalInfoManager.currentUser.points) + " 分"
+            }
         }
     }
 

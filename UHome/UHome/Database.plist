@@ -2,6 +2,21 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Confirm</key>
+	<array>
+		<dict>
+			<key>phone</key>
+			<string>18524446843</string>
+			<key>image</key>
+			<string>111</string>
+			<key>realname</key>
+			<string>张星宇</string>
+			<key>id</key>
+			<string>321102199507161234</string>
+			<key>username</key>
+			<string>111</string>
+		</dict>
+	</array>
 	<key>Users</key>
 	<array>
 		<dict>

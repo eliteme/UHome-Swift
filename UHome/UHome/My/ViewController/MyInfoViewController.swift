@@ -47,6 +47,7 @@ extension MyInfoViewController {
             cell = UITableViewCell(style: .Default, reuseIdentifier: String(MyInfoViewController))
         }
         cell?.textLabel?.text = titles[indexPath.row]
+        cell?.selectionStyle = .None
 
         let rightLabel = UILabel()
         cell?.contentView.addSubview(rightLabel)
