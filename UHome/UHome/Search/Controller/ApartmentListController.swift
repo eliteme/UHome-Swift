@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ApartmentListController: UIViewController {
+class ApartmentListController: UIViewController ,UITableViewDelegate{
 
     var tableView = UITableView()
     
@@ -22,10 +22,7 @@ class ApartmentListController: UIViewController {
     func setUpTableView(){
         view.addSubview(tableView)
         tableView.snp_makeConstraints { (make) -> Void in
-            make.top.equalTo(globalNavigationBarHeight)
-            make.left.equalTo(0)
-            make.width.equalTo(ScreenWidth)
-            make.bottom.equalTo(view).offset(-globalTabbarHeight)
+           make.edges.equalTo(view)
         }
         
     }
