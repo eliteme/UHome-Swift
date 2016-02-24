@@ -9,11 +9,13 @@
 import UIKit
 
 class HomeDetailViewController: UIViewController {
-
+    let scrollView = UIScrollView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.backgroundColor = UIColor.whiteColor()
+    
+        setupView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,14 +24,39 @@ class HomeDetailViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func setupView() {
+        view.addSubview(scrollView)
+        scrollView.snp_makeConstraints { (make) -> Void in
+            make.edges.equalTo(view)
+        }
+        scrollView.backgroundColor = UIColor.whiteColor()
+        
+        let containerView = UIView()
+        scrollView.addSubview(containerView)
+        containerView.snp_makeConstraints { (make) -> Void in
+            make.edges.equalTo(scrollView)
+            make.width.equalTo(MainBounds.width)
+        }
+        containerView.backgroundColor = UIColor.whiteColor()
+        
+        /// 圆角房屋图片
+        let housePhotoImageView = UIImageView(image: UIImage(named: "train"))
+        containerView.addSubview(housePhotoImageView)
+        housePhotoImageView.snp_makeConstraints { (make) -> Void in
+            make.centerX.equalTo(containerView.snp_centerX)
+            make.width.height.equalTo(80)
+            make.top.equalTo(containerView).offset(20)
+        }
+        housePhotoImageView.layer.cornerRadius = 40
+        housePhotoImageView.layer.masksToBounds = true
+        housePhotoImageView.layer.shouldRasterize = true
+        
+        /// 房屋名称
+        
+        containerView.snp_makeConstraints { (make) -> Void in
+            make.bottom.equalTo(housePhotoImageView.snp_bottom).offset(600)
+//            make.height.equalTo(600)
+        }
     }
-    */
 
 }
