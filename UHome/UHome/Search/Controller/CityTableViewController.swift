@@ -11,10 +11,11 @@ import UIKit
 class CityTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     var tableView = UITableView()
+    var allCity = ["北京","广州"]
+    var searchResult: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        automaticallyAdjustsScrollViewInsets = false
         
         setUpTableView()
     }
@@ -30,8 +31,22 @@ class CityTableViewController: UIViewController, UITableViewDelegate, UITableVie
         
     }
     
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return searchResult.count
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return searchResult.count
+    }
+    
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        var titleStr = ""
+        let str = NSMutableString(string: allCity[section]) as CFMutableString
+        if CFStringTransform(str, nil, kCFStringTransformMandarinLatin, false) == true{
+            titleStr = str as String
+        }
+        let title = "\(titleStr[titleStr.startIndex])"
+        return title
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -41,10 +56,22 @@ class CityTableViewController: UIViewController, UITableViewDelegate, UITableVie
             cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: identifier)
             cell?.selectionStyle = UITableViewCellSelectionStyle.None
         }
-        cell?.textLabel?.text = "爱丁堡"
+        cell?.textLabel?.text = searchResult[indexPath.row]
         return cell!
-
+        
     }
-
-
 }
+
+extension CityTableViewController{
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print("1")
+        let apartmentListVC = ApartmentListController()
+        navigationController?.pushViewControllerWithTabbarHidden(apartmentListVC, animated: true)
+        print(2)
+    }
+    
+}
+
+
+

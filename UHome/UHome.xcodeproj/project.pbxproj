@@ -26,6 +26,7 @@
 		1B69BF8A1C78BFD900AE9EE7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B69BF891C78BFD900AE9EE7 /* HomeViewController.swift */; };
 		1B69BF8C1C78BFE800AE9EE7 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B69BF8B1C78BFE800AE9EE7 /* MessageViewController.swift */; };
 		1B69BF901C78C00600AE9EE7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B69BF8F1C78C00600AE9EE7 /* SearchViewController.swift */; };
+		1B98CC3F1C7D9E4900D4DF80 /* ApartmentListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98CC3E1C7D9E4900D4DF80 /* ApartmentListController.swift */; };
 		1BCE88171C7A064000E57831 /* MessageDataSourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCE88161C7A064000E57831 /* MessageDataSourse.swift */; };
 		1BCE881A1C7A06BA00E57831 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCE88181C7A06BA00E57831 /* MessageCell.swift */; };
 		1BCE881B1C7A06BA00E57831 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BCE88191C7A06BA00E57831 /* MessageCell.xib */; };
@@ -67,6 +68,7 @@
 		1B69BF891C78BFD900AE9EE7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1B69BF8B1C78BFE800AE9EE7 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageViewController.swift; path = ../MessageViewController.swift; sourceTree = "<group>"; };
 		1B69BF8F1C78C00600AE9EE7 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = ../SearchViewController.swift; sourceTree = "<group>"; };
+		1B98CC3E1C7D9E4900D4DF80 /* ApartmentListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApartmentListController.swift; sourceTree = "<group>"; };
 		1BCE88161C7A064000E57831 /* MessageDataSourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDataSourse.swift; sourceTree = "<group>"; };
 		1BCE88181C7A06BA00E57831 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		1BCE88191C7A06BA00E57831 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			children = (
 				1B69BF8F1C78C00600AE9EE7 /* SearchViewController.swift */,
 				1B137B6C1C7C6B560027288A /* CityTableViewController.swift */,
+				1B98CC3E1C7D9E4900D4DF80 /* ApartmentListController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				1BCE881A1C7A06BA00E57831 /* MessageCell.swift in Sources */,
 				1B69BF6D1C77E19800AE9EE7 /* ViewController.swift in Sources */,
 				9BFD02191C7B4976003D7D13 /* MyInfoTableViewCell.swift in Sources */,
+				1B98CC3F1C7D9E4900D4DF80 /* ApartmentListController.swift in Sources */,
 				1B69BF6B1C77E19800AE9EE7 /* AppDelegate.swift in Sources */,
 				1B137B481C7B4BCA0027288A /* ChatMessageLeftCell.swift in Sources */,
 				1B137B491C7B4BCA0027288A /* ChatMessageRightCell.swift in Sources */,
