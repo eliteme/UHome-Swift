@@ -10,7 +10,7 @@ import UIKit
 
 class ConfirmViewController: UIViewController {
     var realName: String?
-    var readID: String?
+    var realID: String?
     var realPhotoName: String?
     var realPhoneNumber: String?
     
@@ -39,7 +39,7 @@ class ConfirmViewController: UIViewController {
             user = user as! NSDictionary
             if user.objectForKey("username") as? String == GlobalInfoManager.currentUser.name {
                 realName = user.objectForKey("realname") as? String
-                readID = user.objectForKey("id") as? String
+                realID = user.objectForKey("id") as? String
                 realPhotoName = user.objectForKey("image") as? String
                 realPhoneNumber = user.objectForKey("phone") as? String
             }
@@ -66,7 +66,7 @@ extension ConfirmViewController {
         realPhotoConfirmArea.layer.borderColor = "203 205 206".ktcolor.CGColor
         realPhotoConfirmArea.backgroundColor = "250 251 252".ktcolor
         
-        if let photoName = realPhotoName {
+        if let photoName = realPhotoName {  // 真实头像认证后的UI控件
             realPhotoConfirmArea.addSubview(clickImageView1)
             clickImageView1.snp_makeConstraints(closure: { (make) -> Void in
                 make.centerY.equalTo(realPhotoConfirmArea.snp_centerY)
@@ -81,6 +81,23 @@ extension ConfirmViewController {
                 make.right.equalTo(realPhotoConfirmArea.snp_right).offset(-30)
                 make.width.height.equalTo(150)
             })
+            
+            let label = UILabel()
+            realPhotoConfirmArea.addSubview(label)
+            label.snp_makeConstraints(closure: { (make) -> Void in
+                make.left.equalTo(10)
+                make.top.equalTo(clickImageView1.snp_bottom).offset(10)
+            })
+            label.font = UIFont.systemFontOfSize(14)
+            label.text = "成功进行真实头像验证"
+        }
+        else {  // 未进行头像认证时的代码
+            let errorHintLabel = UILabel()
+            realPhotoConfirmArea.addSubview(errorHintLabel)
+            errorHintLabel.snp_makeConstraints(closure: { (make) -> Void in
+                make.center.equalTo(realPhotoConfirmArea.snp_center)
+            })
+            errorHintLabel.text = "您还没有进行真实头像认证"
         }
         /**
         实名认证区域
@@ -96,6 +113,52 @@ extension ConfirmViewController {
         realNameConfirmArea.layer.borderColor = "203 205 206".ktcolor.CGColor
         realNameConfirmArea.backgroundColor = "250 251 252".ktcolor
         
+        if let id = realID, name = realName {
+            realNameConfirmArea.addSubview(clickImageView2)
+            clickImageView2.snp_makeConstraints(closure: { (make) -> Void in
+                make.centerY.equalTo(realNameConfirmArea.snp_centerY)
+                make.left.equalTo(20)
+                make.width.height.equalTo(100)
+            })
+            
+            let label = UILabel()
+            realNameConfirmArea.addSubview(label)
+            label.snp_makeConstraints(closure: { (make) -> Void in
+                make.left.equalTo(10)
+                make.top.equalTo(clickImageView2.snp_bottom).offset(10)
+            })
+            label.font = UIFont.systemFontOfSize(14)
+            label.text = "成功进行真实姓名验证"
+            
+            let nameLabel = UILabel()
+            realNameConfirmArea.addSubview(nameLabel)
+            nameLabel.snp_makeConstraints(closure: { (make) -> Void in
+                make.top.equalTo(clickImageView2)
+                make.left.equalTo(clickImageView2).offset(180)
+            })
+            nameLabel.text = "姓名：" + name
+            
+            let idLabel = UITextView()
+            realNameConfirmArea.addSubview(idLabel)
+            idLabel.snp_makeConstraints(closure: { (make) -> Void in
+                make.centerX.equalTo(nameLabel.snp_centerX).offset(10)
+                make.top.equalTo(nameLabel.snp_bottom).offset(50)
+                make.width.equalTo(160)
+                make.height.equalTo(80)
+            })
+            idLabel.backgroundColor = UIColor.clearColor()
+            idLabel.font = UIFont.systemFontOfSize(14)
+            idLabel.text = "       身份证号：\n\n" + id
+        }
+        else {
+            let errorHintLabel = UILabel()
+            realNameConfirmArea.addSubview(errorHintLabel)
+            errorHintLabel.snp_makeConstraints(closure: { (make) -> Void in
+                make.center.equalTo(realNameConfirmArea.snp_center)
+            })
+            errorHintLabel.text = "您还没有进行真实姓名认证"
+        }
+        
         view.addSubview(realPhoneConfirmArea)
         realPhoneConfirmArea.snp_makeConstraints { (make) -> Void in
             make.left.equalTo(view).offset(-0.3)
@@ -106,5 +169,47 @@ extension ConfirmViewController {
         realPhoneConfirmArea.layer.borderWidth = 0.3
         realPhoneConfirmArea.layer.borderColor = "203 205 206".ktcolor.CGColor
         realPhoneConfirmArea.backgroundColor = "250 251 252".ktcolor
+        
+        if let phoneNumber = realPhoneNumber {
+            realPhoneConfirmArea.addSubview(clickImageView3)
+            clickImageView3.snp_makeConstraints(closure: { (make) -> Void in
+                make.centerY.equalTo(realPhoneConfirmArea.snp_centerY)
+                make.left.equalTo(20)
+                make.width.height.equalTo(100)
+            })
+            
+            let label = UILabel()
+            realPhoneConfirmArea.addSubview(label)
+            label.snp_makeConstraints(closure: { (make) -> Void in
+                make.left.equalTo(10)
+                make.top.equalTo(clickImageView3.snp_bottom).offset(10)
+            })
+            label.font = UIFont.systemFontOfSize(14)
+            label.text = "成功进行真实手机号验证"
+            
+            let hintLabel = UILabel()
+            realPhoneConfirmArea.addSubview(hintLabel)
+            hintLabel.snp_makeConstraints(closure: { (make) -> Void in
+                make.top.equalTo(clickImageView3).offset(30)
+                make.left.equalTo(clickImageView3).offset(210)
+            })
+            hintLabel.text = "手机号码"
+            
+            let phoneNumberLabel = UILabel()
+            realPhoneConfirmArea.addSubview(phoneNumberLabel)
+            phoneNumberLabel.snp_makeConstraints(closure: { (make) -> Void in
+                make.centerX.equalTo(hintLabel.snp_centerX)
+                make.top.equalTo(hintLabel.snp_bottom).offset(30)
+            })
+            phoneNumberLabel.text = phoneNumber
+        }
+        else {
+            let errorHintLabel = UILabel()
+            realPhoneConfirmArea.addSubview(errorHintLabel)
+            errorHintLabel.snp_makeConstraints(closure: { (make) -> Void in
+                make.center.equalTo(realPhoneConfirmArea.snp_center)
+            })
+            errorHintLabel.text = "您还没有进行真实手机号认证"
+        }
     }
 }

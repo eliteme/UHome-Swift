@@ -31,6 +31,7 @@
 		1BCE881B1C7A06BA00E57831 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BCE88191C7A06BA00E57831 /* MessageCell.xib */; };
 		1BCE881D1C7A0D9600E57831 /* ChatTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCE881C1C7A0D9600E57831 /* ChatTableController.swift */; };
 		8D75A04B676242001F52E99F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B9E6640A5A3A9A3FECD50B /* Pods.framework */; };
+		9B303AFC1C7DCA0E003FAE56 /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B303AFB1C7DCA0E003FAE56 /* HomeDetailViewController.swift */; };
 		9B91E01F1C7C98D8008761AB /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B91E01E1C7C98D8008761AB /* ConfirmViewController.swift */; };
 		9BBE9B081C7A02F6008B50A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBE9B071C7A02F6008B50A6 /* LoginViewController.swift */; };
 		9BBE9B0B1C7A0841008B50A6 /* KtColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBE9B0A1C7A0841008B50A6 /* KtColor.swift */; };
@@ -71,6 +72,7 @@
 		1BCE88191C7A06BA00E57831 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		1BCE881C1C7A0D9600E57831 /* ChatTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableController.swift; sourceTree = "<group>"; };
 		751F9117AF3A2B25B6859830 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9B303AFB1C7DCA0E003FAE56 /* HomeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDetailViewController.swift; sourceTree = "<group>"; };
 		9B91E01E1C7C98D8008761AB /* ConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
 		9BBE9B071C7A02F6008B50A6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9BBE9B0A1C7A0841008B50A6 /* KtColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KtColor.swift; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 				9BFD021A1C7C3F66003D7D13 /* CommentViewController.swift */,
 				9BFD021C1C7C44C7003D7D13 /* MyInfoViewController.swift */,
 				9B91E01E1C7C98D8008761AB /* ConfirmViewController.swift */,
+				9B303AFB1C7DCA0E003FAE56 /* HomeDetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B303AFC1C7DCA0E003FAE56 /* HomeDetailViewController.swift in Sources */,
 				1BCE881D1C7A0D9600E57831 /* ChatTableController.swift in Sources */,
 				1BCE881A1C7A06BA00E57831 /* MessageCell.swift in Sources */,
 				1B69BF6D1C77E19800AE9EE7 /* ViewController.swift in Sources */,
