@@ -12,9 +12,7 @@
 		1B137B491C7B4BCA0027288A /* ChatMessageRightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B137B471C7B4BCA0027288A /* ChatMessageRightCell.swift */; };
 		1B137B4C1C7B4C130027288A /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B137B4A1C7B4C130027288A /* ChatModel.swift */; };
 		1B137B4D1C7B4C130027288A /* ChatTableDataSourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B137B4B1C7B4C130027288A /* ChatTableDataSourse.swift */; };
-		1B137B651C7C4AD70027288A /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B137B641C7C4AD70027288A /* SearchView.swift */; };
 		1B137B671C7C4B0B0027288A /* HeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B137B661C7C4B0B0027288A /* HeadView.swift */; };
-		1B137B6D1C7C6B560027288A /* CityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B137B6C1C7C6B560027288A /* CityTableViewController.swift */; };
 		1B69BF6B1C77E19800AE9EE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B69BF6A1C77E19800AE9EE7 /* AppDelegate.swift */; };
 		1B69BF6D1C77E19800AE9EE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B69BF6C1C77E19800AE9EE7 /* ViewController.swift */; };
 		1B69BF701C77E19800AE9EE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B69BF6E1C77E19800AE9EE7 /* Main.storyboard */; };
@@ -27,6 +25,9 @@
 		1B69BF8C1C78BFE800AE9EE7 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B69BF8B1C78BFE800AE9EE7 /* MessageViewController.swift */; };
 		1B69BF901C78C00600AE9EE7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B69BF8F1C78C00600AE9EE7 /* SearchViewController.swift */; };
 		1B98CC3F1C7D9E4900D4DF80 /* ApartmentListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98CC3E1C7D9E4900D4DF80 /* ApartmentListController.swift */; };
+		1B98CC681C7DECBB00D4DF80 /* ApartmentListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98CC661C7DECBB00D4DF80 /* ApartmentListCell.swift */; };
+		1B98CC691C7DECBB00D4DF80 /* ApartmentListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B98CC671C7DECBB00D4DF80 /* ApartmentListCell.xib */; };
+		1B98CC6B1C7DF1DA00D4DF80 /* ApartmentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98CC6A1C7DF1DA00D4DF80 /* ApartmentData.swift */; };
 		1BCE88171C7A064000E57831 /* MessageDataSourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCE88161C7A064000E57831 /* MessageDataSourse.swift */; };
 		1BCE881A1C7A06BA00E57831 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCE88181C7A06BA00E57831 /* MessageCell.swift */; };
 		1BCE881B1C7A06BA00E57831 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BCE88191C7A06BA00E57831 /* MessageCell.xib */; };
@@ -52,9 +53,7 @@
 		1B137B471C7B4BCA0027288A /* ChatMessageRightCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessageRightCell.swift; sourceTree = "<group>"; };
 		1B137B4A1C7B4C130027288A /* ChatModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		1B137B4B1C7B4C130027288A /* ChatTableDataSourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableDataSourse.swift; sourceTree = "<group>"; };
-		1B137B641C7C4AD70027288A /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		1B137B661C7C4B0B0027288A /* HeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadView.swift; sourceTree = "<group>"; };
-		1B137B6C1C7C6B560027288A /* CityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTableViewController.swift; sourceTree = "<group>"; };
 		1B69BF671C77E19800AE9EE7 /* UHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B69BF6A1C77E19800AE9EE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B69BF6C1C77E19800AE9EE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +68,9 @@
 		1B69BF8B1C78BFE800AE9EE7 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageViewController.swift; path = ../MessageViewController.swift; sourceTree = "<group>"; };
 		1B69BF8F1C78C00600AE9EE7 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = ../SearchViewController.swift; sourceTree = "<group>"; };
 		1B98CC3E1C7D9E4900D4DF80 /* ApartmentListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApartmentListController.swift; sourceTree = "<group>"; };
+		1B98CC661C7DECBB00D4DF80 /* ApartmentListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApartmentListCell.swift; sourceTree = "<group>"; };
+		1B98CC671C7DECBB00D4DF80 /* ApartmentListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApartmentListCell.xib; sourceTree = "<group>"; };
+		1B98CC6A1C7DF1DA00D4DF80 /* ApartmentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApartmentData.swift; sourceTree = "<group>"; };
 		1BCE88161C7A064000E57831 /* MessageDataSourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDataSourse.swift; sourceTree = "<group>"; };
 		1BCE88181C7A06BA00E57831 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		1BCE88191C7A06BA00E57831 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
@@ -107,7 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				1B69BF8F1C78C00600AE9EE7 /* SearchViewController.swift */,
-				1B137B6C1C7C6B560027288A /* CityTableViewController.swift */,
 				1B98CC3E1C7D9E4900D4DF80 /* ApartmentListController.swift */,
 			);
 			path = Controller;
@@ -116,6 +117,7 @@
 		1B137B621C7C4A280027288A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1B98CC6A1C7DF1DA00D4DF80 /* ApartmentData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -123,8 +125,9 @@
 		1B137B631C7C4A280027288A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1B137B641C7C4AD70027288A /* SearchView.swift */,
 				1B137B661C7C4B0B0027288A /* HeadView.swift */,
+				1B98CC661C7DECBB00D4DF80 /* ApartmentListCell.swift */,
+				1B98CC671C7DECBB00D4DF80 /* ApartmentListCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B98CC691C7DECBB00D4DF80 /* ApartmentListCell.xib in Resources */,
 				1B69BF781C77E19800AE9EE7 /* LaunchScreen.storyboard in Resources */,
 				1BCE881B1C7A06BA00E57831 /* MessageCell.xib in Resources */,
 				1B69BF751C77E19800AE9EE7 /* Assets.xcassets in Resources */,
@@ -438,11 +442,12 @@
 				1B137B481C7B4BCA0027288A /* ChatMessageLeftCell.swift in Sources */,
 				1B137B491C7B4BCA0027288A /* ChatMessageRightCell.swift in Sources */,
 				9BFD021D1C7C44C7003D7D13 /* MyInfoViewController.swift in Sources */,
-				1B137B651C7C4AD70027288A /* SearchView.swift in Sources */,
 				1BCE88171C7A064000E57831 /* MessageDataSourse.swift in Sources */,
+				1B98CC6B1C7DF1DA00D4DF80 /* ApartmentData.swift in Sources */,
 				9BFD021B1C7C3F66003D7D13 /* CommentViewController.swift in Sources */,
 				1B69BF881C78BF7900AE9EE7 /* MainTabBarController.swift in Sources */,
 				9BFD02131C7B4545003D7D13 /* MyViewController.swift in Sources */,
+				1B98CC681C7DECBB00D4DF80 /* ApartmentListCell.swift in Sources */,
 				1B69BF901C78C00600AE9EE7 /* SearchViewController.swift in Sources */,
 				1B69BF861C78BF0D00AE9EE7 /* CommonData.swift in Sources */,
 				1B69BF731C77E19800AE9EE7 /* UHome.xcdatamodeld in Sources */,
@@ -455,7 +460,6 @@
 				1B69BF8A1C78BFD900AE9EE7 /* HomeViewController.swift in Sources */,
 				9BFD02171C7B4608003D7D13 /* DataModel.swift in Sources */,
 				1B137B451C7B43BF0027288A /* UIInputView.swift in Sources */,
-				1B137B6D1C7C6B560027288A /* CityTableViewController.swift in Sources */,
 				9BBE9B081C7A02F6008B50A6 /* LoginViewController.swift in Sources */,
 				1B69BF8C1C78BFE800AE9EE7 /* MessageViewController.swift in Sources */,
 				1B137B4C1C7B4C130027288A /* ChatModel.swift in Sources */,
