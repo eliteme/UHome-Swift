@@ -22,7 +22,8 @@ class ApartmentListController: UIViewController ,UITableViewDelegate, UITableVie
     func setUpTableView(){
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = 300
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 100
         
         view.addSubview(tableView)
         tableView.snp_makeConstraints { (make) -> Void in
@@ -35,14 +36,14 @@ class ApartmentListController: UIViewController ,UITableViewDelegate, UITableVie
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let identifier = "apartmentListCell"
+        let identifier = "ApartmentListCell"
         var cell = tableView.dequeueReusableCellWithIdentifier(identifier) as? ApartmentListCell
         if cell == nil{
-            cell = NSBundle.mainBundle().loadNibNamed("ApartmentListCell", owner: nil, options: nil).last as? ApartmentListCell
+            cell = ApartmentListCell(style: UITableViewCellStyle.Default, reuseIdentifier: identifier)
             cell?.selectionStyle = UITableViewCellSelectionStyle.None
+
         }
-        cell?.titleLabel.text = "于古色古香的徽派客栈，偷得浮生半日闲"
-        cell?.describeLabel.text = "一房一厅，可住三人：¥321/晚起"
+        cell?.titleView.text = "你管我"
         cell?.imageView?.image = UIImage(named: "tempImg")
         return cell!
     }
