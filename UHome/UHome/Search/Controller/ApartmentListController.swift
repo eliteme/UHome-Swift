@@ -44,7 +44,7 @@ class ApartmentListController: UIViewController ,UITableViewDelegate, UITableVie
 
         }
         cell?.titleView.text = "你管我"
-        cell?.imageView?.image = UIImage(named: "tempImg")
+        cell?.imgView?.image = UIImage(named: "tempImg")
         return cell!
     }
 
