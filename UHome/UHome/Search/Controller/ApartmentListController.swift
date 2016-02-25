@@ -15,8 +15,16 @@ class ApartmentListController: UIViewController ,UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
       
+        setNavItem()
         setUpTableView()
 
+    }
+    func setNavItem(){
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: "goFilter")
+    }
+    
+    func goFilter(){
+        navigationController?.pushViewControllerWithTabbarHidden(FilterViewController(), animated: true)
     }
     
     func setUpTableView(){
@@ -30,7 +38,10 @@ class ApartmentListController: UIViewController ,UITableViewDelegate, UITableVie
            make.edges.equalTo(view)
         }
     }
-    
+}
+
+extension ApartmentListController{
+        
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }

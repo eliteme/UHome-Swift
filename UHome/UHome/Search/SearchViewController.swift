@@ -64,6 +64,8 @@ extension SearchViewController{
         }
         tableView.reloadData()
     }
+}
+extension SearchViewController{
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         
@@ -96,7 +98,7 @@ extension SearchViewController{
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        navigationController?.pushViewController(ApartmentListController(), animated: true)
+        navigationController?.pushViewControllerWithTabbarHidden(ApartmentListController(), animated: true)
     }
 
 }
