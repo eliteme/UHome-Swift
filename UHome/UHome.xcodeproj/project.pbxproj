@@ -35,6 +35,8 @@
 		1BCE881B1C7A06BA00E57831 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BCE88191C7A06BA00E57831 /* MessageCell.xib */; };
 		1BCE881D1C7A0D9600E57831 /* ChatTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCE881C1C7A0D9600E57831 /* ChatTableController.swift */; };
 		8D75A04B676242001F52E99F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B9E6640A5A3A9A3FECD50B /* Pods.framework */; };
+		9B27C3221C7F5852008F1E24 /* ApartmentThumbnailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B27C3201C7F5852008F1E24 /* ApartmentThumbnailViewController.xib */; };
+		9B27C3231C7F5852008F1E24 /* ApartmentThumbnailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B27C3211C7F5852008F1E24 /* ApartmentThumbnailViewController.swift */; };
 		9B303AFC1C7DCA0E003FAE56 /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B303AFB1C7DCA0E003FAE56 /* HomeDetailViewController.swift */; };
 		9B91E01F1C7C98D8008761AB /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B91E01E1C7C98D8008761AB /* ConfirmViewController.swift */; };
 		9BBE9B081C7A02F6008B50A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBE9B071C7A02F6008B50A6 /* LoginViewController.swift */; };
@@ -80,6 +82,8 @@
 		1BCE88191C7A06BA00E57831 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		1BCE881C1C7A0D9600E57831 /* ChatTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableController.swift; sourceTree = "<group>"; };
 		751F9117AF3A2B25B6859830 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9B27C3201C7F5852008F1E24 /* ApartmentThumbnailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApartmentThumbnailViewController.xib; sourceTree = "<group>"; };
+		9B27C3211C7F5852008F1E24 /* ApartmentThumbnailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApartmentThumbnailViewController.swift; sourceTree = "<group>"; };
 		9B303AFB1C7DCA0E003FAE56 /* HomeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDetailViewController.swift; sourceTree = "<group>"; };
 		9B91E01E1C7C98D8008761AB /* ConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
 		9BBE9B071C7A02F6008B50A6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -279,6 +283,8 @@
 		9BFD02111C7B4545003D7D13 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				9B27C3201C7F5852008F1E24 /* ApartmentThumbnailViewController.xib */,
+				9B27C3211C7F5852008F1E24 /* ApartmentThumbnailViewController.swift */,
 				9BFD02121C7B4545003D7D13 /* MyViewController.swift */,
 				9BFD021A1C7C3F66003D7D13 /* CommentViewController.swift */,
 				9BFD021C1C7C44C7003D7D13 /* MyInfoViewController.swift */,
@@ -455,6 +461,7 @@
 				1B69BF881C78BF7900AE9EE7 /* MainTabBarController.swift in Sources */,
 				9BFD02131C7B4545003D7D13 /* MyViewController.swift in Sources */,
 				1B69BF901C78C00600AE9EE7 /* SearchViewController.swift in Sources */,
+				9B27C3231C7F5852008F1E24 /* ApartmentThumbnailViewController.swift in Sources */,
 				1B69BF861C78BF0D00AE9EE7 /* CommonData.swift in Sources */,
 				1B69BF731C77E19800AE9EE7 /* UHome.xcdatamodeld in Sources */,
 				9BFD020E1C7B05D6003D7D13 /* Delay.swift in Sources */,

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ApartmentThumbnailViewController" customModule="UHome" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="F3S-Xl-iUS" id="dPZ-ce-Ms9"/>
+                <outlet property="mainTitle" destination="WVp-fA-7RU" id="DK3-d3-EKK"/>
+                <outlet property="priceLabel" destination="jeS-Pv-NGU" id="x0d-LY-WyD"/>
+                <outlet property="subTitle" destination="fuJ-AH-4tw" id="4dQ-wF-v7J"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F3S-Xl-iUS">
+                    <rect key="frame" x="20" y="8" width="120" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="reu-7X-bMR"/>
+                        <constraint firstAttribute="width" constant="120" id="zMU-US-fUl"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="整套出租" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuJ-AH-4tw">
+                    <rect key="frame" x="160" y="56" width="65" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.51372549019607838" green="0.54509803921568623" blue="0.5607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeS-Pv-NGU">
+                    <rect key="frame" x="462" y="56" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="上海火车栈青年旅社标准房" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVp-fA-7RU">
+                    <rect key="frame" x="160" y="15" width="219" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                    <color key="textColor" red="0.23529411764705882" green="0.29411764705882354" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="WVp-fA-7RU" firstAttribute="leading" secondItem="F3S-Xl-iUS" secondAttribute="trailing" constant="15" id="2y6-cK-PtM"/>
+                <constraint firstAttribute="trailing" secondItem="jeS-Pv-NGU" secondAttribute="trailing" constant="20" id="4HU-OS-i2G"/>
+                <constraint firstAttribute="bottom" secondItem="F3S-Xl-iUS" secondAttribute="bottom" constant="10" id="Bqu-nR-s7N"/>
+                <constraint firstItem="fuJ-AH-4tw" firstAttribute="top" secondItem="WVp-fA-7RU" secondAttribute="bottom" constant="20" id="NKT-0R-iX1"/>
+                <constraint firstItem="F3S-Xl-iUS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="VH7-Xa-ymK"/>
+                <constraint firstItem="fuJ-AH-4tw" firstAttribute="leading" secondItem="F3S-Xl-iUS" secondAttribute="trailing" constant="15" id="aZq-SX-bco"/>
+                <constraint firstItem="jeS-Pv-NGU" firstAttribute="top" secondItem="fuJ-AH-4tw" secondAttribute="top" id="d6a-9a-yJR"/>
+                <constraint firstItem="WVp-fA-7RU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="tLv-le-2Ve"/>
+                <constraint firstItem="F3S-Xl-iUS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="u4G-cp-hMi"/>
+            </constraints>
+            <point key="canvasLocation" x="323" y="438"/>
+        </view>
+    </objects>
+</document>
