@@ -103,16 +103,3 @@ extension SearchViewController{
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
