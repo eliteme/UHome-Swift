@@ -104,7 +104,7 @@ class HomeDetailViewController: UIViewController {
         lineView2.snp_makeConstraints { (make) -> Void in
             make.centerX.equalTo(containerView.snp_centerX)
             make.left.equalTo(20)
-            make.top.equalTo(lineView1.snp_bottom).offset(150)
+            make.top.equalTo(lineView1.snp_bottom).offset(120)
             make.height.equalTo(1)
         }
         lineView2.backgroundColor = "239 241 241".ktcolor
@@ -149,8 +149,57 @@ class HomeDetailViewController: UIViewController {
         label1.snp_makeConstraints { (make) -> Void in
             make.left.top.equalTo(20)
         }
-        label1.text = "房主姓名"
+        label1.text = "房主姓名："
+        label1.textColor = "131 139 143".ktcolor
+        label1.font = UIFont.systemFontOfSize(13)
         
+        let label2 = UILabel()
+        confirmInfoView.addSubview(label2)
+        label2.snp_makeConstraints { (make) -> Void in
+            make.left.equalTo(20)
+            make.top.equalTo(label1.snp_bottom).offset(20)
+        }
+        label2.text = "身份证号："
+        label2.textColor = "131 139 143".ktcolor
+        label2.font = UIFont.systemFontOfSize(13)
+        
+        let label3 = UILabel()
+        confirmInfoView.addSubview(label3)
+        label3.snp_makeConstraints { (make) -> Void in
+            make.left.equalTo(20)
+            make.top.equalTo(label2.snp_bottom).offset(20)
+        }
+        label3.text = "手机号码："
+        label3.textColor = "131 139 143".ktcolor
+        label3.font = UIFont.systemFontOfSize(13)
+        
+        let content1 = UILabel()
+        confirmInfoView.addSubview(content1)
+        content1.snp_makeConstraints { (make) -> Void in
+            make.centerY.equalTo(label1.snp_centerY)
+            make.left.equalTo(label1.snp_right).offset(30)
+        }
+        content1.text = GlobalInfoManager.currentConfirmInfo.realName
+        content1.textColor = "20 30 42".ktcolor
+        
+        let content2 = UILabel()
+        confirmInfoView.addSubview(content2)
+        content2.snp_makeConstraints { (make) -> Void in
+            make.centerY.equalTo(label2.snp_centerY)
+            make.left.equalTo(label2.snp_right).offset(30)
+        }
+        content2.text = GlobalInfoManager.currentConfirmInfo.realID
+        content2.textColor = "20 30 42".ktcolor
+        
+        let content3 = UILabel()
+        confirmInfoView.addSubview(content3)
+        content3.snp_makeConstraints { (make) -> Void in
+            make.centerY.equalTo(label3.snp_centerY)
+            make.left.equalTo(label3.snp_right).offset(30)
+        }
+        content3.text = GlobalInfoManager.currentConfirmInfo.realPhoneNumber
+        content3.textColor = "20 30 42".ktcolor
+
     }
     
     func addApartment() {

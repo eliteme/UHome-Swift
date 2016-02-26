@@ -19,3 +19,10 @@ struct User {
     let location: String
     var points: Int // 积分
 }
+
+struct ConfirmInfo {
+    var realName: String?
+    var realID: String?
+    var realPhotoName: String?
+    var realPhoneNumber: String?
+}

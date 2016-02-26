@@ -29,6 +29,22 @@ class MyViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
         tableView.estimatedRowHeight = 50
+        
+        configureConfirmation()
+    }
+    
+    func configureConfirmation() {
+        let mainDic = NSDictionary.init(contentsOfFile: NSBundle.mainBundle().pathForResource("Database", ofType: "plist")!)
+        let confirmDic = mainDic!["Confirm"]
+        for var user in confirmDic as! NSArray {
+            user = user as! NSDictionary
+            if user.objectForKey("username") as? String == GlobalInfoManager.currentUser.name {
+                GlobalInfoManager.currentConfirmInfo = ConfirmInfo(realName: user.objectForKey("realname") as? String,
+                                                                   realID: user.objectForKey("id") as? String,
+                                                                   realPhotoName: user.objectForKey("image") as? String,
+                                                                   realPhoneNumber: user.objectForKey("phone") as? String)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

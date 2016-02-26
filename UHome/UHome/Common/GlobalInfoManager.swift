@@ -18,4 +18,9 @@ class GlobalInfoManager {
                                         work:  "",
                                         location: "",
                                         points: 0)
+
+    static var currentConfirmInfo: ConfirmInfo = ConfirmInfo(realName: "",
+                                                             realID: "",
+                                                             realPhotoName: "",
+                                                             realPhoneNumber: "")
 }

@@ -9,18 +9,12 @@
 import UIKit
 
 class ConfirmViewController: UIViewController {
-    var realName: String?
-    var realID: String?
-    var realPhotoName: String?
-    var realPhoneNumber: String?
-    
     let realNameConfirmArea = UIView()
     let realPhotoConfirmArea = UIView()
     let realPhoneConfirmArea = UIView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureConfirmation()
         setupView()
         
         self.view.backgroundColor = UIColor.whiteColor()
@@ -32,19 +26,7 @@ class ConfirmViewController: UIViewController {
     }
     
 
-    func configureConfirmation() {
-        let mainDic = NSDictionary.init(contentsOfFile: NSBundle.mainBundle().pathForResource("Database", ofType: "plist")!)
-        let confirmDic = mainDic!["Confirm"]
-        for var user in confirmDic as! NSArray {
-            user = user as! NSDictionary
-            if user.objectForKey("username") as? String == GlobalInfoManager.currentUser.name {
-                realName = user.objectForKey("realname") as? String
-                realID = user.objectForKey("id") as? String
-                realPhotoName = user.objectForKey("image") as? String
-                realPhoneNumber = user.objectForKey("phone") as? String
-            }
-        }
-    }
+    
 
 }
 
@@ -66,7 +48,7 @@ extension ConfirmViewController {
         realPhotoConfirmArea.layer.borderColor = "203 205 206".ktcolor.CGColor
         realPhotoConfirmArea.backgroundColor = "250 251 252".ktcolor
         
-        if let photoName = realPhotoName {  // 真实头像认证后的UI控件
+        if let photoName = GlobalInfoManager.currentConfirmInfo.realPhotoName {  // 真实头像认证后的UI控件
             realPhotoConfirmArea.addSubview(clickImageView1)
             clickImageView1.snp_makeConstraints(closure: { (make) -> Void in
                 make.centerY.equalTo(realPhotoConfirmArea.snp_centerY)
@@ -113,7 +95,7 @@ extension ConfirmViewController {
         realNameConfirmArea.layer.borderColor = "203 205 206".ktcolor.CGColor
         realNameConfirmArea.backgroundColor = "250 251 252".ktcolor
         
-        if let id = realID, name = realName {
+        if let id = GlobalInfoManager.currentConfirmInfo.realID, name = GlobalInfoManager.currentConfirmInfo.realName {
             realNameConfirmArea.addSubview(clickImageView2)
             clickImageView2.snp_makeConstraints(closure: { (make) -> Void in
                 make.centerY.equalTo(realNameConfirmArea.snp_centerY)
@@ -170,7 +152,7 @@ extension ConfirmViewController {
         realPhoneConfirmArea.layer.borderColor = "203 205 206".ktcolor.CGColor
         realPhoneConfirmArea.backgroundColor = "250 251 252".ktcolor
         
-        if let phoneNumber = realPhoneNumber {
+        if let phoneNumber = GlobalInfoManager.currentConfirmInfo.realPhoneNumber {
             realPhoneConfirmArea.addSubview(clickImageView3)
             clickImageView3.snp_makeConstraints(closure: { (make) -> Void in
                 make.centerY.equalTo(realPhoneConfirmArea.snp_centerY)
