@@ -382,6 +382,7 @@
 			files = (
 				1B69BF781C77E19800AE9EE7 /* LaunchScreen.storyboard in Resources */,
 				1BCE881B1C7A06BA00E57831 /* MessageCell.xib in Resources */,
+                9B27C3221C7F5852008F1E24 /* ApartmentThumbnailViewController.xib in Resources */,
 				1B1F89031C7F3F1D0018DE2E /* NumberOfPeopleCell.xib in Resources */,
 				1B69BF751C77E19800AE9EE7 /* Assets.xcassets in Resources */,
 				9BFD02081C7AF833003D7D13 /* Database.plist in Resources */,

@@ -17,7 +17,7 @@ class HomeDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.whiteColor()
-    
+        self.title = "房东介绍"
         setupView()
     }
 
@@ -143,6 +143,14 @@ class HomeDetailViewController: UIViewController {
             make.right.equalTo(confirmInfoView.snp_right).offset(-30)
             make.width.height.equalTo(60)
         }
+        
+        let label1 = UILabel()
+        confirmInfoView.addSubview(label1)
+        label1.snp_makeConstraints { (make) -> Void in
+            make.left.top.equalTo(20)
+        }
+        label1.text = "房主姓名"
+        
     }
     
     func addApartment() {
