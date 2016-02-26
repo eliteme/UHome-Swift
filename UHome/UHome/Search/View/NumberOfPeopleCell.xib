@@ -19,14 +19,14 @@
                         <constraints>
                             <constraint firstAttribute="width" constant="30" id="UNg-qr-8v1"/>
                         </constraints>
-                        <state key="normal" title="Button"/>
+                        <state key="normal" title="➖"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGS-xP-3Pe">
                         <rect key="frame" x="280" y="0.0" width="30" height="43.5"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="30" id="YlA-EP-pmo"/>
                         </constraints>
-                        <state key="normal" title="Button"/>
+                        <state key="normal" title="➕"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r60-xI-b4c">
                         <rect key="frame" x="40" y="0.0" width="240" height="43.5"/>

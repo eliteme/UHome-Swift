@@ -8,6 +8,8 @@
 
 import UIKit
 
+public let changeNumberOfPeopleNotification = "changeNumberOfPeopleNotification"
+
 class FilterViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     var datePicker: UIDatePicker!
@@ -22,6 +24,18 @@ class FilterViewController: UIViewController,UITableViewDelegate,UITableViewData
         setTableView()
     }
 
+    
+    override func viewWillAppear(animated: Bool) {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "changeNumberOfPeople", name: changeNumberOfPeopleNotification, object: nil)
+    }
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
+    func changeNumberOfPeople(){
+        tableView.reloadData()
+    }
 
     func setDataPicker(){
         datePicker = UIDatePicker()
@@ -59,7 +73,6 @@ class FilterViewController: UIViewController,UITableViewDelegate,UITableViewData
 
 extension FilterViewController{
     
-    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
     }
@@ -72,7 +85,6 @@ extension FilterViewController{
                 cell?.selectionStyle = UITableViewCellSelectionStyle.None
             
         }
-        cell?.numberLabel.text = "1人"
         return cell!
     }
 
